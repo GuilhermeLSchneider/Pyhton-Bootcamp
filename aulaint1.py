@@ -36,9 +36,8 @@
 # print(f.soma_parcial(5)(20))
 
 # from funcoes import map_reduce as mr
-
 # from funcoes import lambdas as l
-
 # from funcoes import comprehension as c
 
-from OO import produto as p
+# from OO import produto
+from OO import heranca as h
