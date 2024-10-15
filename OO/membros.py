@@ -22,9 +22,6 @@ class Contador:
     def dividir_por_2(valor):
         return valor / 2
 
-    def mostrar(self):
-        print(self.valor)
-
 # Contador.inst() => Não é possível acessar
 
 Contador.incrementar()

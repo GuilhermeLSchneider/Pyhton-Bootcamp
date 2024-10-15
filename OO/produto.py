@@ -5,6 +5,7 @@ class Produto:
         self.desc = desc
     
     @property
+    # Essa nomenclatura permite que um método seja chamado como um atributo e não mais como um método
     def get_preco(self):
         return self.__preco
     
@@ -14,7 +15,6 @@ class Produto:
             self.__preco = valor
     
     @property
-    # Essa nomenclatura permite que um método seja chamado como um atributo e não mais como um método
     def preco_com_desconto(self):
         return self.get_preco * (1 - self.desc)
 
