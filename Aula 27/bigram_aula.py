@@ -87,6 +87,7 @@ class BigramLanguageModel(nn.Module):
             idx = torch.cat((idx, idx_next), dim=1) # adiciona o novo token à sequência
         return idx
         # importante notar que o modelo leva em conta apenas o último token para prever o próximo, não o contexto completo ainda
+        # (isso está implementado no bigram_v2_aula.py)
 
 model = BigramLanguageModel(vocab_size)
 m = model.to(device)
